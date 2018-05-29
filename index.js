@@ -1,5 +1,9 @@
+/* eslint-env node */
 'use strict';
 
-module.exports = {
-  name: 'contacts-engine'
-};
+const EngineAddon = require('ember-engines/lib/engine-addon');
+
+module.exports = EngineAddon.extend({
+  name: 'contacts-engine',
+  lazyLoading: false,
+});
